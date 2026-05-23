@@ -5,3 +5,10 @@ CREATE TABLE notification_template (
     message_template VARCHAR(255),
     status VARCHAR(30)
 );
+
+CREATE TABLE notification_channel (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(80),
+    description VARCHAR(255),
+    status VARCHAR(30)
+);
